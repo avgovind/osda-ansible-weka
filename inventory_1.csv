@@ -1,0 +1,2 @@
+Management_Hostname,Management_IP1,IB_Hostname,IB_Interface_IP1,iLO_Hostname,ILO_User,ILO_Password,iLO_IP
+gnode19,10.100.3.19,gnode19-ib,172.16.0.198,gnode19-ilo,Administrator,hpinvent,10.100.2.19

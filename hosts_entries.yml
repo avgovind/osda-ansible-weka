@@ -1,0 +1,19 @@
+---
+  - name: Read Inventory CSV file for hosts
+    read_csv:
+      path: 'inventory.csv'
+    register: hosts
+    delegate_to: localhost
+
+  - debug:
+      msg: "{{ hosts }}"
+
+
+  - name: Add host entries to /etc/hosts for each host
+    lineinfile:
+      dest: /etc/hosts
+      regexp: "^{{ item['MgmtIP1'] }}.*$"
+      line: "{{ item['MgmtIP1'] }}\t\t{{ item['Hostname'] }}"
+      state: present
+    loop: "{{ hosts.list }}"
+

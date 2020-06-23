@@ -1,0 +1,21 @@
+
+  - name: NetworkManager Disablement
+    shell:
+      cmd: systemctl stop NetworkManager; systemctl disable NetworkManager
+
+  - name: Copy create WEKA cluster script
+    copy:
+      src: data/create_weka_cluster.sh
+      dest: /root/create_weka_cluster.sh
+      owner: root
+      mode: u+rx
+
+  - name: Copy inventory CSV file
+    copy:
+      src: data/inventory.csv
+      dest: /root/inventory.csv
+
+  - name: Run create WEKA cluster script on first node
+    shell:
+      cmd: /root/create_weka_cluster.sh /root/inventory.csv
+    delegate_to: gnode19

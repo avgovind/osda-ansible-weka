@@ -1,0 +1,9 @@
+
+
+  - hosts: OSDA_hosts
+
+    tasks:
+    - import_tasks: public_key.yml
+    - import_tasks: copy_install.yml
+    - import_tasks: deploy_weka_cluster.yml
+#    - import_tasks: hosts_entries.yml

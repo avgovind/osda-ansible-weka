@@ -1,0 +1,60 @@
+---
+  - name: Copy inventory CSV file
+    copy:
+      src: data/inventory.csv
+      dest: /root/inventory.csv
+
+  - name: Copy OS configuration script
+    copy:
+      src: data/configure_weka_host.sh
+      dest: /root/configure_weka_host.sh
+      owner: root
+      mode: u+rx
+
+  - name: Mellanox OFED Installation
+    shell:
+      cmd: /root/configure_weka_host.sh /root/inventory.csv
+
+  - name: Copy Mellanox OFED driver package to hosts
+    copy:
+      src: data/MLNX_OFED_LINUX-4.7-3.2.9.0-rhel7.7-x86_64.tgz
+      dest: /root/MLNX_OFED_LINUX-4.7-3.2.9.0-rhel7.7-x86_64.tgz
+
+  - name: Unarchive Mellanox OFED driver package
+    unarchive:
+      src: /root/MLNX_OFED_LINUX-4.7-3.2.9.0-rhel7.7-x86_64.tgz
+      creates: /root/MLNX_OFED_LINUX-4.7-3.2.9.0-rhel7.7-x86_64
+      dest: /root/
+      remote_src: yes
+
+  - name: Mellanox OFED Installation
+    shell:
+      cmd: ./mlnxofedinstall --force 
+      chdir: /root/MLNX_OFED_LINUX-4.7-3.2.9.0-rhel7.7-x86_64
+
+  - name: Restart Mellanox OFED driver
+    shell:
+      cmd: /etc/init.d/openibd restart
+
+  - name: copy WEKA software package to hosts
+    copy:
+      src: data/weka-3.7.0.tar
+      dest: /root/weka-3.7.0.tar
+
+  - name: Unarchive WEKA software package
+    unarchive:
+      src: /root/weka-3.7.0.tar
+      creates: /root/weka-3.7.0
+      dest: /root/
+      remote_src: yes
+
+  - name: Install WEKA software
+    shell:
+      cmd: ./install.sh
+      chdir: /root/weka-3.7.0
+
+  - name: Start Weka server on all remote hosts in the stem mode (Not required)
+    shell:
+      cmd: weka local start
+
+

@@ -1,0 +1,22 @@
+
+  - name: Copy WEKA hosts configuration script
+    copy:
+      src: data/configure_weka_host.sh
+      dest: /root/configure_weka_host.sh
+
+  - name: Copy generated hosts files with all host name entries
+    copy:
+      src: data/deploy_weka.sh
+      dest: /root/deploy_weka.sh
+
+  - name: Copy hosts inventory
+    copy:
+      src: data/deploy_weka.sh
+      dest: /root/deploy_weka.sh
+
+  - name: Run Weka deploymer script
+    shell:
+      cmd: ./deploy_weka.sh
+      chdir: /root/
+
+

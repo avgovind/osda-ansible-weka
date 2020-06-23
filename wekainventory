@@ -1,0 +1,9 @@
+[osda_server]
+OSDA    ansible_connection=local
+
+[wekaservers]
+10.188.210.25     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.188.210.26     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.188.210.27     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.188.210.28     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.188.210.29     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"

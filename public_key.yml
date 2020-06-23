@@ -1,0 +1,8 @@
+---
+# This playbook will work only if ansible.cfg is configured with host_key_checking = False
+  - name: Set authorized key on all hosts to allow passwordless ssh from Ansible server
+    authorized_key:
+      user: root
+      state: present
+      manage_dir: yes
+      key: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
