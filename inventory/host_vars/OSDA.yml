@@ -1,0 +1,11 @@
+deploy_json_file: "data/deploy.json"
+
+osda_ip_address: "10.100.3.1"
+
+# Default 5000
+#osda_port: "<osda_port>"
+
+retry_count: "1"
+max_retries: "50"
+ssh_wait_time: "30"
+sleep_time: "900"

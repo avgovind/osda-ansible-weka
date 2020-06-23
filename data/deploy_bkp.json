@@ -1,0 +1,96 @@
+{
+    "taskName": "WekaDepl",
+    "hosts": [
+        {
+            "serverProfile": "wekasp1",
+            "hostName": "wekahost1",
+            "ipAddr": "10.188.210.27",
+            "netmask": "255.255.255.0",
+            "gateway": "10.188.210.1",
+            "dns1": "10.188.0.2",
+            "dns2": "10.188.0.3",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-Minimal-2003",
+            "mgmtNIC": {
+                "connectionName": "mgmt1"
+            },
+            "osDrive": {
+                "driveName": "LocalOSDrive"
+            }
+        },
+        {
+            "serverProfile": "wekasp2",
+            "hostName": "wekahost2",
+            "ipAddr": "10.188.210.28",
+            "netmask": "255.255.255.0",
+            "gateway": "10.188.210.1",
+            "dns1": "10.188.0.2",
+            "dns2": "10.188.0.3",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-Minimal-2003",
+            "mgmtNIC": {
+                "connectionName": "mgmt1"
+            },
+            "osDrive": {
+                "driveName": "LocalOSDrive"
+            }
+        },
+        {
+            "serverProfile": "wekasp3",
+            "hostName": "wekahost3",
+            "ipAddr": "10.188.210.29",
+            "netmask": "255.255.255.0",
+            "gateway": "10.188.210.1",
+            "dns1": "10.188.0.2",
+            "dns2": "10.188.0.3",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-Minimal-2003",
+            "mgmtNIC": {
+                "connectionName": "mgmt1"
+            },
+            "osDrive": {
+                "driveName": "LocalOSDrive"
+            }
+        },
+        {
+            "serverProfile": "wekasp4",
+            "hostName": "wekahost4",
+            "ipAddr": "10.188.210.30",
+            "netmask": "255.255.255.0",
+            "gateway": "10.188.210.1",
+            "dns1": "10.188.0.2",
+            "dns2": "10.188.0.3",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-Minimal-2003",
+            "mgmtNIC": {
+                "connectionName": "mgmt1"
+            },
+            "osDrive": {
+                "driveName": "LocalOSDrive"
+            }
+        },
+        {
+            "serverProfile": "wekasp5",
+            "hostName": "wekahost5",
+            "ipAddr": "10.188.210.31",
+            "netmask": "255.255.255.0",
+            "gateway": "10.188.210.1",
+            "dns1": "10.188.0.2",
+            "dns2": "10.188.0.3",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-Minimal-2003",
+            "mgmtNIC": {
+                "connectionName": "mgmt1"
+            },
+            "osDrive": {
+                "driveName": "LocalOSDrive"
+            }
+        }
+    ],
+    "osPackage": "CentOS-7-x86_64-Minimal-2003",
+    "deploymentMode": "hpesynergy",
+    "oneviewDetails": {
+        "ovName": "Syn210",
+        "ovSPT": "WEKAIO_SPT"
+    }
+}

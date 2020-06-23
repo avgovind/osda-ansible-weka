@@ -1,0 +1,7 @@
+Management_Hostname,Management_IP1,Management_IP2,IB_Hostname,IB_Interface_IP1,IB_Interface_IP2,iLO_Hostname,ILO_User,ILO_Password,iLO_IP
+gnode19,10.100.3.19,,gnode19-ib,172.16.0.198,,gnode19-ilo,Administrator,hpinvent,10.100.2.19
+gnode20,10.100.3.20,,gnode20-ib,172.16.0.199,,gnode20-ilo,Administrator,hpinvent,10.100.2.20
+gnode21,10.100.3.21,,gnode21-ib,172.16.0.200,,gnode21-ilo,Administrator,hpinvent,10.100.2.21
+gnode22,10.100.3.22,,gnode22-ib,172.16.0.201,,gnode22-ilo,Administrator,hpinvent,10.100.2.22
+gnode23,10.100.3.23,,gnode23-ib,172.16.0.202,,gnode23-ilo,Administrator,hpinvent,10.100.2.23
+gnode24,10.100.3.24,,gnode24-ib,172.16.0.203,,gnode24-ilo,Administrator,hpinvent,10.100.2.24

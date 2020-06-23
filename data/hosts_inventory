@@ -1,0 +1,10 @@
+[osda_server]
+OSDA    ansible_connection=local
+
+[OSDA_hosts]
+10.100.3.19     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.100.3.20     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.100.3.21     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.100.3.22     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.100.3.23     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"
+10.100.3.24     ansible_connection=ssh        ansible_ssh_user=root ansible_ssh_pass="Welcome#123"

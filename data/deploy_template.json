@@ -1,0 +1,25 @@
+{
+  "taskName": "notitle",
+  "hosts": [
+    {
+      "iloIPAddr": "10.100.2.19",
+      "iloUser": "Administrator",
+      "iloPassword": "hpinvent",
+      "hostName": "gnode19",
+      "ipAddr": "10.100.3.19",
+      "netmask": "255.255.0.0",
+      "gateway": "10.100.0.5",
+      "dns1": "15.243.160.51",
+      "dns2": "15.243.160.52",
+      "bootProto": "static",
+      "osPackage": "CentOS-7-x86_64-DVD-1908.iso",
+      "mgmtNIC": {
+        "adapterId": "2",
+        "portId": 1
+      },
+      "osDrive": {}
+    }
+  ],
+  "deploymentMode": "hpeilo",
+  "oneviewDetails": {}
+}
