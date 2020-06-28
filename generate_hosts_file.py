@@ -4,7 +4,8 @@ import csv
 import copy
 import os
 
-inventory_csv_path = "./inventory.csv"
+#inventory_csv_path = "./inventory.csv"
+inventory_csv_path = "data/inventory_all.csv"
 
 
 inventory_dict = []

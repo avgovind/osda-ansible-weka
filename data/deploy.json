@@ -2,6 +2,96 @@
     "taskName": "notitle",
     "hosts": [
         {
+            "iloIPAddr": "10.100.2.19",
+            "iloUser": "Administrator",
+            "iloPassword": "hpinvent",
+            "hostName": "gnode19",
+            "ipAddr": "10.100.3.19",
+            "netmask": "255.255.0.0",
+            "gateway": "10.100.0.5",
+            "dns1": "15.243.160.51",
+            "dns2": "15.243.160.52",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-DVD-1908.iso",
+            "mgmtNIC": {
+                "adapterId": "2",
+                "portId": 1
+            },
+            "osDrive": {}
+        },
+        {
+            "iloIPAddr": "10.100.2.20",
+            "iloUser": "Administrator",
+            "iloPassword": "hpinvent",
+            "hostName": "gnode20",
+            "ipAddr": "10.100.3.20",
+            "netmask": "255.255.0.0",
+            "gateway": "10.100.0.5",
+            "dns1": "15.243.160.51",
+            "dns2": "15.243.160.52",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-DVD-1908.iso",
+            "mgmtNIC": {
+                "adapterId": "2",
+                "portId": 1
+            },
+            "osDrive": {}
+        },
+        {
+            "iloIPAddr": "10.100.2.21",
+            "iloUser": "Administrator",
+            "iloPassword": "hpinvent",
+            "hostName": "gnode21",
+            "ipAddr": "10.100.3.21",
+            "netmask": "255.255.0.0",
+            "gateway": "10.100.0.5",
+            "dns1": "15.243.160.51",
+            "dns2": "15.243.160.52",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-DVD-1908.iso",
+            "mgmtNIC": {
+                "adapterId": "2",
+                "portId": 1
+            },
+            "osDrive": {}
+        },
+        {
+            "iloIPAddr": "10.100.2.22",
+            "iloUser": "Administrator",
+            "iloPassword": "hpinvent",
+            "hostName": "gnode22",
+            "ipAddr": "10.100.3.22",
+            "netmask": "255.255.0.0",
+            "gateway": "10.100.0.5",
+            "dns1": "15.243.160.51",
+            "dns2": "15.243.160.52",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-DVD-1908.iso",
+            "mgmtNIC": {
+                "adapterId": "2",
+                "portId": 1
+            },
+            "osDrive": {}
+        },
+        {
+            "iloIPAddr": "10.100.2.23",
+            "iloUser": "Administrator",
+            "iloPassword": "hpinvent",
+            "hostName": "gnode23",
+            "ipAddr": "10.100.3.23",
+            "netmask": "255.255.0.0",
+            "gateway": "10.100.0.5",
+            "dns1": "15.243.160.51",
+            "dns2": "15.243.160.52",
+            "bootProto": "static",
+            "osPackage": "CentOS-7-x86_64-DVD-1908.iso",
+            "mgmtNIC": {
+                "adapterId": "2",
+                "portId": 1
+            },
+            "osDrive": {}
+        },
+        {
             "iloIPAddr": "10.100.2.24",
             "iloUser": "Administrator",
             "iloPassword": "hpinvent",

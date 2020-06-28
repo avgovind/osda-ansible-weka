@@ -1,7 +1,8 @@
 
 
-ansible-playbook osda_deploy_server.yml
+python3.6 generate_osda_json.py data/inventory.csv
+python3.6 generate_ansible_inventory.py data/inventory.csv
 
-ansible-playbook -vvv -i wekainventory pubickey.yaml
+#ansible-playbook -i inventory/OSDA osda_deploy_server.yml
 
-ansible-playbook -vvv -i wekainventory osda_deploy_server.yml
+ansible-playbook -i data/hosts_inventory master_weka_deploy.yml

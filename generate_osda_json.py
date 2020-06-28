@@ -1,10 +1,14 @@
 
-
+import sys
 import csv
 import json
 import copy
 
-inventory_csv_path = "data/inventory.csv"
+# arguments count
+n = len(sys.argv)
+print(sys.argv[1])
+
+inventory_csv_path = sys.argv[1]
 
 # Template JSON file with all common settings and one host entry
 # The host entry in the template will be used for generating entries for hosts 

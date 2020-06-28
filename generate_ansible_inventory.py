@@ -1,11 +1,17 @@
 
-
+import sys
 import csv
 import json
 import copy
 import os
 
-inventory_csv_path = "data/inventory.csv"
+# arguments count
+n = len(sys.argv)
+print(sys.argv[1])
+
+inventory_csv_path = sys.argv[1]
+
+#inventory_csv_path = "data/inventory_all.csv"
 
 inventory_dict = []
 with open(inventory_csv_path, newline='') as f:

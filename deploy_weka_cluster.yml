@@ -6,7 +6,7 @@
   - name: Copy create WEKA cluster script
     copy:
       src: data/create_weka_cluster.sh
-      dest: /root/create_weka_cluster.sh
+      dest: /root/create_weka_cluster.sh 
       owner: root
       mode: u+rx
 
